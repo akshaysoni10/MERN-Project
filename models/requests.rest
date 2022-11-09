@@ -1,0 +1,16 @@
+GET http://localhost:3001/todos HTTP/1.1
+###
+POST http://localhost:3001/todo/new
+Content-type: application/json
+{
+    "text": "Get the things ready"
+}
+###
+DELETE http://localhost:3001/todo/delete
+
+###
+PUT http://localhost:3001/todo/complete
+Content-Type: application/json
+{
+    "text": "Go Shopping for Milk"
+}
